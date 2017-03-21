@@ -1,0 +1,13 @@
+ {
+ "kind": "Service",
+ "apiVersion": "v1",
+ "metadata": {
+ "name": "nginx-service",
+ "namespace": "sample-project",
+ "labels": {"name": "nginx"}
+ },
+ "spec": {
+ "ports": [{"port": 80}],
+ "selector": {"name": "nginx"}
+ }
+ }
